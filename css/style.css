@@ -1246,6 +1246,7 @@ label[for=serviceMonth] {
     border-radius: 5px;
     -webkit-box-shadow: 0 0 5px 6px rgba(210, 210, 210, 0.3);
     box-shadow: 0 0 5px 6px rgba(210, 210, 210, 0.3);
+    margin-bottom: 10px;
   }
 
   .header .navpanel {
