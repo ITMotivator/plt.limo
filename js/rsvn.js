@@ -2,7 +2,6 @@
 
 export { mainFunction };
 
-
 import { mainData } from "../js/data.js";
 import { validateRequest } from "../js/validate.js";
 import { showTerms } from "./showTerms.js";

@@ -1,12 +1,13 @@
 "use strict"
 
-export {requestData};
+export { requestData };
 
 const requestData = getRequestData();
 
 function getRequestData() {
     let formData = {};
-    formData.requestForm = document.querySelector('.booking_form');
+    let requestForm = document.querySelector('.booking_form');
+    formData.requestForm = requestForm;
     formData.flightInp = requestForm.querySelector('#flightNo');
     formData.pickUpPlace = requestForm.querySelector('#pickUpPlace');
     formData.dropOffPlace = requestForm.querySelector('#dropOffPlace');
@@ -15,6 +16,5 @@ function getRequestData() {
     formData.email = requestForm.querySelector('#guestEmail');
     formData.tel = requestForm.querySelector('#guestTel');
     formData.comments = requestForm.querySelector('#comments');
-
     return formData;
 }
