@@ -132,6 +132,12 @@ address {
           justify-content: flex-end;
   gap: 15px;
 }
+.header .navpanel_menu .link_active {
+  color: #B8860B;
+}
+.header .navpanel_menu .link_active:hover {
+  color: #fff;
+}
 
 /*Section Main */
 .main {
@@ -818,6 +824,12 @@ label[for=serviceDay], label[for=serviceMonth] {
 }
 .footer_links a {
   font-weight: 600;
+}
+.footer_links .link_active {
+  color: #B8860B;
+}
+.footer_links .link_active:hover {
+  color: #fff;
 }
 
 @media (max-width: 1199px) {
