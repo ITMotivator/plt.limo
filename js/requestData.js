@@ -6,15 +6,15 @@ const requestData = getRequestData();
 
 function getRequestData() {
     let formData = {};
-    formData.requestForm = document.querySelector('.request-form');
-    formData.flightInp = document.querySelector('#flightNo');
-    formData.pickUpPlace = document.querySelector('#pickUpPlace');
-    formData.dropOffPlace = document.querySelector('#dropOffPlace');
-    formData.guestsNo = document.querySelector('#guestsQnt');
-    formData.pickUpSign = document.querySelector('#pickUpSign');
-    formData.email = document.querySelector('#guestEmail');
-    formData.tel = document.querySelector('#guestTel');
-    formData.comments = document.querySelector('#comments');
+    formData.requestForm = document.querySelector('.booking_form');
+    formData.flightInp = requestForm.querySelector('#flightNo');
+    formData.pickUpPlace = requestForm.querySelector('#pickUpPlace');
+    formData.dropOffPlace = requestForm.querySelector('#dropOffPlace');
+    formData.guestsNo = requestForm.querySelector('#guestsQnt');
+    formData.pickUpSign = requestForm.querySelector('#pickUpSign');
+    formData.email = requestForm.querySelector('#guestEmail');
+    formData.tel = requestForm.querySelector('#guestTel');
+    formData.comments = requestForm.querySelector('#comments');
 
     return formData;
 }

@@ -342,106 +342,109 @@
                     </div>
                 </div>
 
-                <form action="#" class="request-form  form-active shadow p-2 bg-body rounded hidden">
-                    <div class="request-title request-text">BOOKING DETAILS</div>
-
-                    <div class="request-form-date">
-                        <p class="request-text">Service date & time</p>
-                        <div class="service-date d-flex">
-                            <div class="select-day">
-                                <label for="serviceDay" class="request-text">Date</label>
-                                <select name="day" id="serviceDay" class="form-select request-select">
-                                    <option value="1">1</option>
-                                    <option value="2">2</option>
-                                    <option value="3">3</option>
-                                    <option value="4">4</option>
-                                    <option value="5">5</option>
-                                    <option value="6">6</option>
-                                    <option value="7">7</option>
-                                    <option value="8">8</option>
-                                    <option value="9">9</option>
-                                    <option value="10">10</option>
-                                    <option value="11">11</option>
-                                    <option value="12">12</option>
-                                    <option value="13">13</option>
-                                    <option value="14">14</option>
-                                    <option value="15">15</option>
-                                    <option value="16">16</option>
-                                    <option value="17">17</option>
-                                    <option value="18">18</option>
-                                    <option value="19">19</option>
-                                    <option value="20">20</option>
-                                    <option value="21">21</option>
-                                    <option value="22">22</option>
-                                    <option value="23">23</option>
-                                    <option value="24">24</option>
-                                    <option value="25">25</option>
-                                    <option value="26">26</option>
-                                    <option value="27">27</option>
-                                    <option value="28">28</option>
-                                    <option value="29">29</option>
-                                    <option value="30">30</option>
-                                    <option value="31">31</option>
-                                </select>
-                            </div>
-                            <div class="select-month">
-                                <label for="serviceMonth" class="request-text">Month</label>
-                                <select name="month" id="serviceMonth" class="form-select request-select">
-                                    <option value="0">January</option>
-                                    <option value="1">February</option>
-                                    <option value="2">March</option>
-                                    <option value="3">April</option>
-                                    <option value="4">May</option>
-                                    <option value="5">June</option>
-                                    <option value="6">July</option>
-                                    <option value="7">August</option>
-                                    <option value="8">September</option>
-                                    <option value="9">October</option>
-                                    <option value="10">November</option>
-                                    <option value="11">December</option>
-                                </select>
-                            </div>
-                            <div class="select-year">
-                                <label for="serviceYear" class="request-text">Year</label>
-                                <select name="year" id="serviceYear" class="form-select request-select">
-                                    <option value="2023">2023</option>
-                                    <option value="2024">2024</option>
-                                </select>
-                            </div>
-                            <div class="select-time">
-                                <label for="serviceTime" class="request-text">Time</label>
-                                <input type="time" name="time" class="request-text d-block form-control"
-                                    id="serviceTime" required>
+                <div class="booking_form hidden">
+                    <form action="#" class="request-form  form-active shadow p-2 bg-body rounded">
+                        <div class="request-title request-text">BOOKING DETAILS</div>
+    
+                        <div class="request-form-date">
+                            <p class="request-text">Service date & time</p>
+                            <div class="service-date d-flex">
+                                <div class="select-day">
+                                    <label for="serviceDay" class="request-text">Date</label>
+                                    <select name="day" id="serviceDay" class="form-select request-select">
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+                                        <option value="7">7</option>
+                                        <option value="8">8</option>
+                                        <option value="9">9</option>
+                                        <option value="10">10</option>
+                                        <option value="11">11</option>
+                                        <option value="12">12</option>
+                                        <option value="13">13</option>
+                                        <option value="14">14</option>
+                                        <option value="15">15</option>
+                                        <option value="16">16</option>
+                                        <option value="17">17</option>
+                                        <option value="18">18</option>
+                                        <option value="19">19</option>
+                                        <option value="20">20</option>
+                                        <option value="21">21</option>
+                                        <option value="22">22</option>
+                                        <option value="23">23</option>
+                                        <option value="24">24</option>
+                                        <option value="25">25</option>
+                                        <option value="26">26</option>
+                                        <option value="27">27</option>
+                                        <option value="28">28</option>
+                                        <option value="29">29</option>
+                                        <option value="30">30</option>
+                                        <option value="31">31</option>
+                                    </select>
+                                </div>
+                                <div class="select-month">
+                                    <label for="serviceMonth" class="request-text">Month</label>
+                                    <select name="month" id="serviceMonth" class="form-select request-select">
+                                        <option value="0">January</option>
+                                        <option value="1">February</option>
+                                        <option value="2">March</option>
+                                        <option value="3">April</option>
+                                        <option value="4">May</option>
+                                        <option value="5">June</option>
+                                        <option value="6">July</option>
+                                        <option value="7">August</option>
+                                        <option value="8">September</option>
+                                        <option value="9">October</option>
+                                        <option value="10">November</option>
+                                        <option value="11">December</option>
+                                    </select>
+                                </div>
+                                <div class="select-year">
+                                    <label for="serviceYear" class="request-text">Year</label>
+                                    <select name="year" id="serviceYear" class="form-select request-select">
+                                        <option value="2023">2023</option>
+                                        <option value="2024">2024</option>
+                                    </select>
+                                </div>
+                                <div class="select-time">
+                                    <label for="serviceTime" class="request-text">Time</label>
+                                    <input type="time" name="time" class="request-text d-block form-control"
+                                        id="serviceTime" required>
+                                </div>
                             </div>
                         </div>
-                    </div>
-
-                    <div class="request-form-trip">
-                        <p class="request-text">trip details</p>
-                        <input type="number" name="numberOfGuests" id="guestsQnt" placeholder="Passengers"
-                            class="request-text form-control" min="1" max="9" required>
-                        <input type="text" name="pickUpPlace" id="pickUpPlace" class="request-text form-control"
-                            placeholder="Pickup hotel/location name">
-                        <input id="flightNo" type="text" class="request-text form-control hidden"
-                            placeholder="Flight number" pattern="[A-Za-z0-9]+" title="Example: TG220">
-                        <input type="text" name="dropOffPlace" id="dropOffPlace" class="request-text form-control"
-                            placeholder="Dropoff hotel/location name">
-                    </div>
-
-                    <div class="request-form-contact">
-                        <p class="request-text">contact details</p>
-                        <input type="text" id="pickUpSign" class="request-text d-block form-control"
-                            placeholder="Pick up sign" required>
-                        <input type="email" name="guestEmail" id="guestEmail" class="d-block request-text form-control"
-                            placeholder="Email" required>
-                        <input type="tel" name="guestTel" id="guestTel" class="d-block request-text form-control"
-                            placeholder="Telephone: +" required>
-                    </div>
-
-                    <textarea name="comments" id="comments" cols="70" rows="10" class="form-control"
-                        placeholder="Comments: airport fast track service, child seat & others"></textarea>
-                    <button id="requestBtn" type="submit" class="d-block">Send request</button>
-                </form>
+    
+                        <div class="request-form-trip">
+                            <p class="request-text">trip details</p>
+                            <input type="number" name="numberOfGuests" id="guestsQnt" placeholder="Passengers"
+                                class="request-text form-control" min="1" max="9" required>
+                            <input type="text" name="pickUpPlace" id="pickUpPlace" class="request-text form-control"
+                                placeholder="Pickup hotel/location name">
+                            <input id="flightNo" type="text" class="request-text form-control hidden"
+                                placeholder="Flight number" pattern="[A-Za-z0-9]+" title="Example: TG220">
+                            <input type="text" name="dropOffPlace" id="dropOffPlace" class="request-text form-control"
+                                placeholder="Dropoff hotel/location name">
+                        </div>
+    
+                        <div class="request-form-contact">
+                            <p class="request-text">contact details</p>
+                            <input type="text" id="pickUpSign" class="request-text d-block form-control"
+                                placeholder="Pick up sign" required>
+                            <input type="email" name="guestEmail" id="guestEmail" class="d-block request-text form-control"
+                                placeholder="Email" required>
+                            <input type="tel" name="guestTel" id="guestTel" class="d-block request-text form-control"
+                                placeholder="Telephone: +" required>
+                        </div>
+    
+                        <textarea name="comments" id="comments" cols="70" rows="10" class="form-control"
+                            placeholder="Comments: airport fast track service, child seat & others"></textarea>
+                        <button id="requestBtn" type="submit" class="d-block">Send request</button>
+                    </form>
+                </div>
+                
             </div>
         </section>
 

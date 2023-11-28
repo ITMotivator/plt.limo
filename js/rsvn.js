@@ -321,12 +321,6 @@ function mainFunction(Email, requestData) {
         }
 
         requestData.requestForm.classList.remove('hidden');
-        if (screen.width < 576) {
-            requestData.requestForm.classList.remove('grid');
-            requestData.requestForm.classList.add('flex');
-        } else {
-            requestData.requestForm.classList.add('grid');
-        }
 
         for (let car of cars) {
             if (car.dataset.carname !== rsvnData.carName) {
