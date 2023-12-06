@@ -18,8 +18,8 @@ html body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  min-height: 100vh;
   min-height: -webkit-fill-available;
+  min-height: 100vh;
 }
 
 a {
@@ -182,6 +182,12 @@ address {
 }
 .main .carousel-inner .carousel-item img {
   z-index: 0;
+}
+.main .fast-track.arrival {
+  background: url("../img/fast-track/airport_arr.jpg") center center/cover no-repeat;
+}
+.main .fast-track.departure {
+  background: url("../img/fast-track/airport_dep.jpg") center center/cover no-repeat;
 }
 
 .car-image {
@@ -440,6 +446,7 @@ label.forms-text {
 
 /*Booking details form */
 .request-form {
+  margin: 0 auto;
   width: 1046px;
   margin-bottom: 50px;
   display: grid;
@@ -574,7 +581,7 @@ label[for=serviceDay], label[for=serviceMonth] {
   text-align: center;
   font-size: 24px;
   font-weight: 700;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 .services_img {
   width: 100%;
@@ -628,6 +635,7 @@ label[for=serviceDay], label[for=serviceMonth] {
   font-size: 17px;
   text-indent: 0;
   color: #27567a;
+  margin-bottom: 10px;
 }
 .services_list-item::before {
   display: block;
@@ -639,9 +647,57 @@ label[for=serviceDay], label[for=serviceMonth] {
   position: absolute;
   background: url("../img/icons/circle-check.svg") center center/cover no-repeat;
 }
+.services_list-item:last-child {
+  margin-bottom: 0;
+}
 .services_list-item a {
   color: #a03636;
   text-decoration: underline;
+}
+
+.fast-track .services_title {
+  margin-top: 0;
+  background-color: rgba(68, 68, 68, 0.8);
+}
+.fast-track .services_item {
+  background-color: rgba(255, 255, 255, 0.9);
+}
+.fast-track .services_list {
+  margin-bottom: 5px;
+}
+.fast-track_subtitle {
+  font-size: 22px;
+  text-indent: 25px;
+  font-weight: 600;
+  line-height: 28px;
+  margin-bottom: 10px;
+  color: #008080;
+}
+.fast-track_list {
+  margin-bottom: 0;
+}
+.fast-track_item {
+  position: relative;
+  font-size: 18px;
+  text-indent: 0;
+  margin-bottom: 10px;
+}
+.fast-track_item::before {
+  display: block;
+  width: 20px;
+  height: 20px;
+  left: -30px;
+  top: 3px;
+  content: "";
+  position: absolute;
+  background: url("../img/icons/tick.svg") center center/cover no-repeat;
+}
+.fast-track_item:last-child {
+  margin-bottom: 0;
+}
+
+.departure .services_item {
+  min-height: 498px;
 }
 
 .cars-gallery {
@@ -832,6 +888,14 @@ label[for=serviceDay], label[for=serviceMonth] {
   color: #fff;
 }
 
+@media (max-width: 1399px) {
+  .services .fast-track_item {
+    font-size: 16px;
+  }
+  .departure .services_item {
+    min-height: 453px;
+  }
+}
 @media (max-width: 1199px) {
   .header_logo {
     max-width: 100%;
@@ -872,6 +936,12 @@ label[for=serviceDay], label[for=serviceMonth] {
   }
   .main .request-form .service-date {
     gap: 5px;
+  }
+  .fast-track .services_subtitle {
+    font-size: 21px;
+  }
+  .arrival .services_item {
+    min-height: 510px;
   }
   .cars-gallery ul.nav li.nav-item {
     font-size: 14px;
@@ -918,6 +988,12 @@ label[for=serviceDay], label[for=serviceMonth] {
   }
   .services_list-item {
     font-size: 13px;
+  }
+  .services .ft-mb {
+    margin-bottom: 40px;
+  }
+  .services .fast-track_item {
+    font-size: 18px;
   }
   .cars-gallery_warning {
     padding-right: 55px;
@@ -986,28 +1062,28 @@ label[for=serviceDay], label[for=serviceMonth] {
   .main .cars-list .car .car-data, .main .cars-list .car a {
     text-align: center;
   }
-  .main .request-form.grid {
+  .main .request-form {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 5, 1fr;
   }
-  .main .request-form.grid .request-title {
+  .main .request-form .request-title {
     grid-column: 1/3;
   }
-  .main .request-form.grid #comments, .main .request-form.grid #requestBtn {
+  .main .request-form #comments, .main .request-form #requestBtn {
     grid-column: 2/3;
   }
-  .main .request-form.grid .request-form-contact {
+  .main .request-form .request-form-contact {
     grid-row: 3/5;
   }
-  .main .request-form.grid #comments {
+  .main .request-form #comments {
     grid-row: 3/4;
     margin-top: 13px;
     height: 165px;
   }
-  .main .request-form.grid #requestBtn {
+  .main .request-form #requestBtn {
     grid-row: 4/5;
   }
-  .main .request-form.grid #serviceDay, .main .request-form.grid #serviceMonth, .main .request-form.grid #serviceYear, .main .request-form.grid #serviceTime {
+  .main .request-form #serviceDay, .main .request-form #serviceMonth, .main .request-form #serviceYear, .main .request-form #serviceTime {
     font-size: 16px;
   }
   .services {
@@ -1025,6 +1101,9 @@ label[for=serviceDay], label[for=serviceMonth] {
   .services_title {
     margin-top: 15px;
     margin-bottom: 15px;
+  }
+  .services .ft-mb {
+    margin-bottom: 0;
   }
   .cars-gallery_title {
     margin-top: 15px;
@@ -1165,6 +1244,15 @@ label[for=serviceDay], label[for=serviceMonth] {
   }
   .services_list-item {
     font-size: 15px;
+  }
+  .services .fast-track_item {
+    font-size: 16px;
+  }
+  .fast-track .services_item {
+    min-height: initial;
+  }
+  .fast-track .services_title {
+    font-size: 28px;
   }
   .cars-gallery_title {
     font-size: 32px;
