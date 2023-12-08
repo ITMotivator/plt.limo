@@ -588,7 +588,7 @@ label[for=serviceDay], label[for=serviceMonth] {
   border-radius: 5px;
 }
 .services_text {
-  padding: 10px 5px;
+  padding: 10px 5px 0;
   font-size: 18px;
   text-indent: 20px;
   text-align: justify;
@@ -653,51 +653,6 @@ label[for=serviceDay], label[for=serviceMonth] {
 .services_list-item a {
   color: #a03636;
   text-decoration: underline;
-}
-
-.fast-track .services_title {
-  margin-top: 0;
-  background-color: rgba(68, 68, 68, 0.8);
-}
-.fast-track .services_item {
-  background-color: rgba(255, 255, 255, 0.9);
-}
-.fast-track .services_list {
-  margin-bottom: 5px;
-}
-.fast-track_subtitle {
-  font-size: 22px;
-  text-indent: 25px;
-  font-weight: 600;
-  line-height: 28px;
-  margin-bottom: 10px;
-  color: #008080;
-}
-.fast-track_list {
-  margin-bottom: 0;
-}
-.fast-track_item {
-  position: relative;
-  font-size: 18px;
-  text-indent: 0;
-  margin-bottom: 10px;
-}
-.fast-track_item::before {
-  display: block;
-  width: 20px;
-  height: 20px;
-  left: -30px;
-  top: 3px;
-  content: "";
-  position: absolute;
-  background: url("../img/icons/tick.svg") center center/cover no-repeat;
-}
-.fast-track_item:last-child {
-  margin-bottom: 0;
-}
-
-.departure .services_item {
-  min-height: 498px;
 }
 
 .cars-gallery {
@@ -888,12 +843,60 @@ label[for=serviceDay], label[for=serviceMonth] {
   color: #fff;
 }
 
+.fast-track .services_title {
+  margin-top: 0;
+  background-color: rgba(68, 68, 68, 0.8);
+}
+.fast-track .services_item {
+  background-color: rgba(255, 255, 255, 0.9);
+}
+.fast-track .services_list {
+  margin-bottom: 5px;
+}
+.fast-track_subtitle {
+  font-size: 22px;
+  text-indent: 25px;
+  font-weight: 600;
+  line-height: 28px;
+  margin-bottom: 10px;
+  color: #008080;
+}
+.fast-track_list {
+  margin-bottom: 0;
+}
+.fast-track_item {
+  position: relative;
+  font-size: 18px;
+  text-indent: 0;
+  margin-bottom: 10px;
+}
+.fast-track_item::before {
+  display: block;
+  width: 20px;
+  height: 20px;
+  left: -30px;
+  top: 3px;
+  content: "";
+  position: absolute;
+  background: url("../img/icons/tick.svg") center center/cover no-repeat;
+}
+.fast-track_item:last-child {
+  margin-bottom: 0;
+}
+.fast-track_terms {
+  color: blue;
+  text-align: right;
+  font-size: 17px;
+  text-decoration: underline;
+  padding-right: 25px;
+}
+.fast-track_empty {
+  opacity: 0;
+}
+
 @media (max-width: 1399px) {
-  .services .fast-track_item {
+  .fast-track_item {
     font-size: 16px;
-  }
-  .departure .services_item {
-    min-height: 453px;
   }
 }
 @media (max-width: 1199px) {
@@ -939,9 +942,6 @@ label[for=serviceDay], label[for=serviceMonth] {
   }
   .fast-track .services_subtitle {
     font-size: 21px;
-  }
-  .arrival .services_item {
-    min-height: 510px;
   }
   .cars-gallery ul.nav li.nav-item {
     font-size: 14px;
@@ -989,11 +989,14 @@ label[for=serviceDay], label[for=serviceMonth] {
   .services_list-item {
     font-size: 13px;
   }
-  .services .ft-mb {
+  .services_item {
     margin-bottom: 40px;
   }
-  .services .fast-track_item {
+  .fast-track_item {
     font-size: 18px;
+  }
+  .fast-track_empty {
+    display: none;
   }
   .cars-gallery_warning {
     padding-right: 55px;
@@ -1101,9 +1104,6 @@ label[for=serviceDay], label[for=serviceMonth] {
   .services_title {
     margin-top: 15px;
     margin-bottom: 15px;
-  }
-  .services .ft-mb {
-    margin-bottom: 0;
   }
   .cars-gallery_title {
     margin-top: 15px;
@@ -1241,15 +1241,13 @@ label[for=serviceDay], label[for=serviceMonth] {
   }
   .services_text {
     font-size: 17px;
+    text-align: left;
   }
   .services_list-item {
     font-size: 15px;
   }
   .services .fast-track_item {
     font-size: 16px;
-  }
-  .fast-track .services_item {
-    min-height: initial;
   }
   .fast-track .services_title {
     font-size: 28px;
