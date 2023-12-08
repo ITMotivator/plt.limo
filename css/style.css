@@ -620,6 +620,13 @@ label[for=serviceDay], label[for=serviceMonth] {
   top: 4px;
   left: -4px;
 }
+.services_link {
+  color: blue;
+  text-align: right;
+  font-size: 17px;
+  text-decoration: underline;
+  padding-right: 25px;
+}
 .services_line {
   margin: 10px auto;
   width: 80%;
@@ -882,13 +889,6 @@ label[for=serviceDay], label[for=serviceMonth] {
 }
 .fast-track_item:last-child {
   margin-bottom: 0;
-}
-.fast-track_terms {
-  color: blue;
-  text-align: right;
-  font-size: 17px;
-  text-decoration: underline;
-  padding-right: 25px;
 }
 .fast-track_empty {
   opacity: 0;
