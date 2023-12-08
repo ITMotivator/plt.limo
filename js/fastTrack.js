@@ -1,11 +1,18 @@
 "use strict";
 
 import { showTerms } from "../js/showTerms.js";
+import { openMenu } from "../js/openMenu.js";
 
-let servicesDetails = document.querySelectorAll('.services details');
+window.addEventListener('DOMContentLoaded', function () {
+    openMenu();
 
-for (let details of servicesDetails) {
-    details.addEventListener('click', function () {
-        showTerms(details);
-    });
-}
+    let servicesDetails = document.querySelectorAll('.services details');
+
+    for (let details of servicesDetails) {
+        details.addEventListener('click', function () {
+            showTerms(details);
+        });
+    }
+});
+
+

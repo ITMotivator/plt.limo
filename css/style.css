@@ -561,9 +561,6 @@ label[for=serviceDay], label[for=serviceMonth] {
     opacity: 1;
   }
 }
-.services {
-  padding-bottom: 35px;
-}
 .services_title {
   text-align: center;
   font-size: 36px;
@@ -850,6 +847,9 @@ label[for=serviceDay], label[for=serviceMonth] {
   color: #fff;
 }
 
+.fast-track {
+  padding-bottom: 40px;
+}
 .fast-track .services_title {
   margin-top: 0;
   background-color: rgba(68, 68, 68, 0.8);
@@ -892,6 +892,39 @@ label[for=serviceDay], label[for=serviceMonth] {
 }
 .fast-track_empty {
   opacity: 0;
+}
+
+.terms_title {
+  text-align: center;
+  font-size: 36px;
+  font-weight: 800;
+  color: #fff;
+  background-color: #444;
+  padding: 15px 0;
+  margin-bottom: 40px;
+  margin-top: 40px;
+  margin-top: 0;
+  margin-bottom: 0;
+  background-color: rgba(68, 68, 68, 0.9);
+}
+.terms_list {
+  margin: 20px auto;
+}
+.terms_item {
+  position: relative;
+  font-size: 18px;
+  text-indent: 0;
+  margin-bottom: 10px;
+}
+.terms_item::before {
+  display: block;
+  width: 20px;
+  height: 20px;
+  left: -30px;
+  top: 3px;
+  content: "";
+  position: absolute;
+  background: url("../img/icons/tick.svg") center center/cover no-repeat;
 }
 
 @media (max-width: 1399px) {
@@ -991,6 +1024,9 @@ label[for=serviceDay], label[for=serviceMonth] {
   }
   .services_item {
     margin-bottom: 40px;
+  }
+  .fast-track {
+    padding-bottom: 0;
   }
   .fast-track_item {
     font-size: 18px;
@@ -1105,6 +1141,9 @@ label[for=serviceDay], label[for=serviceMonth] {
     margin-top: 15px;
     margin-bottom: 15px;
   }
+  .terms_title {
+    font-size: 25px;
+  }
   .cars-gallery_title {
     margin-top: 15px;
     margin-bottom: 25px;
@@ -1153,9 +1192,8 @@ label[for=serviceDay], label[for=serviceMonth] {
   .header_logo {
     max-width: 100%;
     border-radius: 5px;
-    -webkit-box-shadow: 0 0 5px 6px rgba(210, 210, 210, 0.3);
-            box-shadow: 0 0 5px 6px rgba(210, 210, 210, 0.3);
-    margin-bottom: 10px;
+    -webkit-box-shadow: 0 -2px 5px 6px rgba(210, 210, 210, 0.3);
+            box-shadow: 0 -2px 5px 6px rgba(210, 210, 210, 0.3);
   }
   .header .navpanel {
     padding-top: 20px;
@@ -1251,6 +1289,12 @@ label[for=serviceDay], label[for=serviceMonth] {
   }
   .fast-track .services_title {
     font-size: 28px;
+  }
+  .terms_title {
+    font-size: 22px;
+  }
+  .terms_item {
+    font-size: 15px;
   }
   .cars-gallery_title {
     font-size: 32px;
