@@ -145,7 +145,7 @@ address {
       -ms-flex: 1;
           flex: 1;
 }
-.main .booking {
+.main .booking .top-content {
   background: url("../img/promo/bg2.jpg") center center/cover no-repeat;
   padding-bottom: 125px;
 }
@@ -161,13 +161,13 @@ address {
   margin-bottom: 0;
 }
 .main_content {
+  padding-top: 125px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   gap: 50px;
-  padding: 125px 0 40px;
 }
 .main_slider {
   width: 680px;
@@ -382,9 +382,8 @@ label.forms-text {
 
 /*Cars menu */
 .cars-list {
-  margin: 0 auto;
-  width: 1046px;
-  margin-bottom: 50px;
+  margin: 50px auto 50px;
+  max-width: 1046px;
 }
 
 .car {
@@ -927,9 +926,67 @@ label[for=serviceDay], label[for=serviceMonth] {
   background: url("../img/icons/tick.svg") center center/cover no-repeat;
 }
 
+.about {
+  padding: 30px 0;
+}
+.about_wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 50px;
+}
+.about_leader {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+  max-width: 500px;
+}
+.about_photo {
+  max-width: 100%;
+}
+.about_name {
+  font-size: 24px;
+  font-weight: 800;
+  text-align: center;
+}
+.about_name br {
+  display: none;
+}
+.about_position {
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
+  text-transform: uppercase;
+}
+.about_description {
+  padding-top: 50px;
+}
+.about_text {
+  font-size: 18px;
+  text-indent: 25px;
+  text-align: justify;
+}
+
 @media (max-width: 1399px) {
   .fast-track_item {
     font-size: 16px;
+  }
+  .about_name {
+    font-size: 20px;
+  }
+  .about_position {
+    font-size: 18px;
   }
 }
 @media (max-width: 1199px) {
@@ -939,12 +996,11 @@ label[for=serviceDay], label[for=serviceMonth] {
   .header .navpanel a {
     font-size: 17px;
   }
-  .main .booking {
-    padding-bottom: 40px;
+  .main .booking .top-content {
+    padding-bottom: 75px;
   }
   .main_content {
     padding-top: 75px;
-    padding-bottom: 50px;
   }
   .main_slider {
     height: 380px;
@@ -1052,6 +1108,9 @@ label[for=serviceDay], label[for=serviceMonth] {
     -webkit-transform: none;
             transform: none;
   }
+  .about_leader {
+    max-width: 48%;
+  }
 }
 @media (max-width: 767px) {
   .header .navpanel {
@@ -1077,12 +1136,14 @@ label[for=serviceDay], label[for=serviceMonth] {
     max-width: 300px;
     margin: 0 auto;
   }
+  .main .booking .top-content {
+    padding-bottom: 50px;
+  }
   .main_title {
     font-size: 25px;
   }
   .main_content {
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding-top: 50px;
   }
   .main .request-form {
     margin-bottom: 0;
@@ -1182,6 +1243,9 @@ label[for=serviceDay], label[for=serviceMonth] {
   }
   .footer_links a {
     font-size: 18px;
+  }
+  .about_name br {
+    display: inline;
   }
 }
 @media (max-width: 575px) {
@@ -1306,6 +1370,32 @@ label[for=serviceDay], label[for=serviceMonth] {
     font-size: 16px;
   }
   .footer_links a {
+    font-size: 15px;
+  }
+  .about {
+    padding: 0 0 20px;
+  }
+  .about_wrapper {
+    gap: 20px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .about_leader {
+    max-width: 70%;
+  }
+  .about_name {
+    font-size: 17px;
+  }
+  .about_name br {
+    display: none;
+  }
+  .about_position {
+    font-size: 14px;
+  }
+  .about_description {
+    padding-top: 25px;
+  }
+  .about_text {
     font-size: 15px;
   }
 }
