@@ -357,9 +357,7 @@ function mainFunction(Email, requestData) {
             <p>Comments: ${dataRequest.comments}</p>
             </html>`,
         })
-            .then(function (message) {
-                alert("Your request recieved!");
-            });
+            .then(window.location.href = '/');
     }
 }
 
