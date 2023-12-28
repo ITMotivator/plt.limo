@@ -50,9 +50,9 @@ function mainFunction(Email, requestData) {
 
     let requestBtn = document.querySelector('#requestBtn');
 
-    requestBtn.addEventListener('click', function () {
+    requestBtn.addEventListener('click', function (event) {
         if (validateRequest(rsvnData, requestData)) {
-            console.log(rsvnData);
+            event.preventDefault();
             alert(`Your request sent! We'll get back to you shortly`);
             sendEmail(rsvnData);
         } else {
@@ -357,7 +357,9 @@ function mainFunction(Email, requestData) {
             <p>Comments: ${dataRequest.comments}</p>
             </html>`,
         })
-            .then(window.location.href = '/');
+            .then((function () {
+                window.location.href = '/';  
+            })());
     }
 }
 
