@@ -61,11 +61,6 @@ function validateRequest(dataObject, requestData) {
                 dataObject.pickUpLocation = requestData.pickUpPlace.value;
                 dataObject.dropOffLocation = requestData.dropOffPlace.value;
                 dataObject.flightNo = "N/A";
-                if (requestData.comments.value) {
-                    dataObject.comments = requestData.comments.value;
-                } else {
-                    dataObject.comments = "N/A";
-                }
                 return true
             }
             else return false
@@ -77,6 +72,11 @@ function validateRequest(dataObject, requestData) {
             dataObject.pickUpSign = requestData.pickUpSign.value;
             dataObject.email = requestData.email.value;
             dataObject.tel = requestData.tel.value;
+            if (requestData.comments.value) {
+                dataObject.comments = requestData.comments.value;
+            } else {
+                dataObject.comments = 'N/A';
+            }
             return true;
         }
         return false

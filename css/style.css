@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   font-family: Lato;
 }
 
@@ -10,14 +10,15 @@ html {
   height: -webkit-fill-available;
   scroll-behavior: smooth;
 }
+
 html body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   min-height: -webkit-fill-available;
   min-height: 100vh;
 }
@@ -26,6 +27,7 @@ a {
   text-decoration: none;
   color: #fff;
 }
+
 a:hover {
   color: #B8860B;
 }
@@ -54,13 +56,16 @@ address {
 .header {
   background-color: #000;
 }
+
 .header_logo {
   border-radius: 15px;
   max-width: 370px;
   -webkit-box-shadow: 0 0 23px 16px rgba(210, 210, 210, 0.3);
-          box-shadow: 0 0 23px 16px rgba(210, 210, 210, 0.3);
+  box-shadow: 0 0 23px 16px rgba(210, 210, 210, 0.3);
 }
-.header_contacts, .header_menu {
+
+.header_contacts,
+.header_menu {
   position: relative;
   display: none;
   margin: 0 auto;
@@ -70,71 +75,89 @@ address {
   font-size: 16px;
   font-weight: 600;
 }
-.header_contacts i.fa-plus, .header_menu i.fa-plus {
+
+.header_contacts i.fa-plus,
+.header_menu i.fa-plus {
   display: inline-block;
   position: absolute;
   right: 12px;
   top: 50%;
   -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
 }
-.header_contacts i.fa-chevron-down, .header_menu i.fa-chevron-down {
+
+.header_contacts i.fa-chevron-down,
+.header_menu i.fa-chevron-down {
   display: none;
 }
-.header_contacts.opened i.fa-plus, .header_menu.opened i.fa-plus {
+
+.header_contacts.opened i.fa-plus,
+.header_menu.opened i.fa-plus {
   display: none;
 }
-.header_contacts.opened i.fa-chevron-down, .header_menu.opened i.fa-chevron-down {
+
+.header_contacts.opened i.fa-chevron-down,
+.header_menu.opened i.fa-chevron-down {
   display: inline-block;
   position: absolute;
   right: 12px;
   top: 50%;
   -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
 }
+
 .header_contacts {
   margin-bottom: 10px;
 }
+
 .header i.fa-solid {
   margin-right: 3px;
 }
+
 .header .lang {
   margin-left: 5px;
 }
+
 .header .navpanel {
   padding-top: 30px;
   padding-bottom: 30px;
   color: #fff;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
+
 .header .navpanel_item {
   -webkit-box-ordinal-group: 2;
-      -ms-flex-order: 1;
-          order: 1;
+  -ms-flex-order: 1;
+  order: 1;
 }
-.header .navpanel_contacts a, .header .navpanel_menu a {
+
+.header .navpanel_contacts a,
+.header .navpanel_menu a {
   font-size: 19px;
   font-weight: 600;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
+
 .header .navpanel_menu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
   gap: 15px;
 }
+
 .header .navpanel_menu .link_active {
   color: #B8860B;
 }
+
 .header .navpanel_menu .link_active:hover {
   color: #fff;
 }
@@ -142,16 +165,19 @@ address {
 /*Section Main */
 .main {
   -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  -ms-flex: 1;
+  flex: 1;
 }
+
 .main .booking .top-content {
-  background: url("../img/promo/bg2.jpg") center center/cover no-repeat;
+  background: url("assets/img/promo/bg2.jpg") center center/cover no-repeat;
   padding-bottom: 125px;
 }
+
 .main .booking_form {
   margin: 0 auto;
 }
+
 .main_title {
   text-align: center;
   padding: 15px 0;
@@ -160,32 +186,39 @@ address {
   background-color: rgba(255, 255, 255, 0.8);
   margin-bottom: 0;
 }
+
 .main_content {
   padding-top: 125px;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   gap: 50px;
 }
+
 .main_slider {
   width: 680px;
   height: 407px;
 }
+
 .main .carousel-inner {
   position: relative;
   height: 100%;
 }
+
 .main .carousel-inner .carousel-item {
   height: 100%;
 }
+
 .main .carousel-inner .carousel-item img {
   z-index: 0;
 }
+
 .main .fast-track.arrival {
   background: url("../img/fast-track/airport_arr.jpg") center center/cover no-repeat;
 }
+
 .main .fast-track.departure {
   background: url("../img/fast-track/airport_dep.jpg") center center/cover no-repeat;
 }
@@ -205,8 +238,8 @@ address {
   width: 100%;
   z-index: 5;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
 .slider-arrow {
@@ -214,6 +247,7 @@ address {
   top: 40%;
   border: none;
 }
+
 .slider-arrow i {
   color: #444444;
   font-size: 30px;
@@ -236,8 +270,8 @@ address {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
 }
 
 .rsvn-srv-choice {
@@ -245,8 +279,8 @@ address {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   margin-bottom: 10px;
 }
 
@@ -259,12 +293,14 @@ address {
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
 }
+
 .srv-tab:not(.srv-tab-active) {
   background-color: rgb(179, 179, 179);
   color: #000;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
+
 .srv-tab:not(.srv-tab-active):hover {
   background-color: #696969;
   font-weight: 700;
@@ -287,13 +323,14 @@ address {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   width: 100%;
 }
+
 .row-location .form-select {
   width: 90%;
   border: 2px solid black;
@@ -316,15 +353,15 @@ i.i-location {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  -ms-flex: 1;
+  flex: 1;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
 label.forms-text {
@@ -333,7 +370,10 @@ label.forms-text {
   padding-left: 28px;
 }
 
-.forms-text, .rsvn-form-select, .request-text, .request-select {
+.forms-text,
+.rsvn-form-select,
+.request-text,
+.request-select {
   padding: 10px;
   font-size: 20px;
 }
@@ -342,11 +382,13 @@ label.forms-text {
   border-radius: 5px;
   font-size: 18px;
 }
+
 .rsvn-form_select option {
   padding-left: 5px;
 }
 
-#pickUpWarning, #dropOffWarning {
+#pickUpWarning,
+#dropOffWarning {
   position: absolute;
   top: 60px;
   left: 28%;
@@ -354,7 +396,8 @@ label.forms-text {
   font-weight: 600;
 }
 
-#search, #requestBtn {
+#search,
+#requestBtn {
   padding: 10px 20px;
   border: 2px solid black;
   background-color: #444;
@@ -371,6 +414,7 @@ label.forms-text {
 #search {
   margin-top: 10px;
 }
+
 #search:hover {
   color: #B8860B;
   background-color: #000;
@@ -388,24 +432,28 @@ label.forms-text {
 
 .car {
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   padding: 20px;
   gap: 20px;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
-.car-icon, .car-data, .car-price, .selectBtn {
+.car-icon,
+.car-data,
+.car-price,
+.selectBtn {
   -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  -ms-flex: 1;
+  flex: 1;
 }
 
 .car-capacity {
   margin-bottom: 0;
 }
+
 .car-capacity span {
   font-size: 20px;
   margin-right: 15px;
@@ -438,6 +486,7 @@ label.forms-text {
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
+
 .selectBtn:hover {
   color: #B8860B;
   background-color: #000;
@@ -451,8 +500,8 @@ label.forms-text {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   -webkit-column-gap: 20px;
-     -moz-column-gap: 20px;
-          column-gap: 20px;
+  -moz-column-gap: 20px;
+  column-gap: 20px;
 }
 
 .request-title {
@@ -482,20 +531,25 @@ p.request-text {
 label.request-text {
   font-size: 18px;
 }
-label[for=serviceDay], label[for=serviceMonth] {
+
+label[for=serviceDay],
+label[for=serviceMonth] {
   padding-top: 0;
 }
 
 .service-date {
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   gap: 7px;
 }
 
-.select-day, .select-month, .select-year, .select-time {
+.select-day,
+.select-month,
+.select-year,
+.select-time {
   width: 47%;
 }
 
@@ -503,13 +557,15 @@ label[for=serviceDay], label[for=serviceMonth] {
   margin-bottom: 0;
 }
 
-.request-form input, .request-form select {
+.request-form input,
+.request-form select {
   border: 1px solid black;
 }
 
 #requestBtn {
   height: 52px;
 }
+
 #requestBtn:hover {
   color: #B8860B;
   background-color: #000;
@@ -524,22 +580,23 @@ label[for=serviceDay], label[for=serviceMonth] {
 /*Section services */
 .swing-in-top-fwd {
   -webkit-animation: swing-in-top-fwd 1s cubic-bezier(0.175, 0.885, 0.32, 1.275) both;
-          animation: swing-in-top-fwd 1s cubic-bezier(0.175, 0.885, 0.32, 1.275) both;
+  animation: swing-in-top-fwd 1s cubic-bezier(0.175, 0.885, 0.32, 1.275) both;
 }
 
 @-webkit-keyframes swing-in-top-fwd {
   0% {
     -webkit-transform: rotateX(-100deg);
-            transform: rotateX(-100deg);
+    transform: rotateX(-100deg);
     -webkit-transform-origin: top;
-            transform-origin: top;
+    transform-origin: top;
     opacity: 0;
   }
+
   100% {
     -webkit-transform: rotateX(0deg);
-            transform: rotateX(0deg);
+    transform: rotateX(0deg);
     -webkit-transform-origin: top;
-            transform-origin: top;
+    transform-origin: top;
     opacity: 1;
   }
 }
@@ -547,19 +604,21 @@ label[for=serviceDay], label[for=serviceMonth] {
 @keyframes swing-in-top-fwd {
   0% {
     -webkit-transform: rotateX(-100deg);
-            transform: rotateX(-100deg);
+    transform: rotateX(-100deg);
     -webkit-transform-origin: top;
-            transform-origin: top;
+    transform-origin: top;
     opacity: 0;
   }
+
   100% {
     -webkit-transform: rotateX(0deg);
-            transform: rotateX(0deg);
+    transform: rotateX(0deg);
     -webkit-transform-origin: top;
-            transform-origin: top;
+    transform-origin: top;
     opacity: 1;
   }
 }
+
 .services_title {
   text-align: center;
   font-size: 36px;
@@ -570,31 +629,37 @@ label[for=serviceDay], label[for=serviceMonth] {
   margin-bottom: 40px;
   margin-top: 40px;
 }
+
 .services_item {
   margin: 0 auto;
 }
+
 .services_subtitle {
   text-align: center;
   font-size: 24px;
   font-weight: 700;
   margin-bottom: 10px;
 }
+
 .services_img {
   width: 100%;
   border-radius: 5px;
 }
+
 .services_text {
   padding: 10px 5px 0;
   font-size: 18px;
   text-indent: 20px;
   text-align: justify;
 }
-.services details > summary {
+
+.services details>summary {
   list-style: none;
   position: relative;
   margin-bottom: 10px;
 }
-.services details > summary::before {
+
+.services details>summary::before {
   display: block;
   content: "";
   left: -5px;
@@ -606,16 +671,19 @@ label[for=serviceDay], label[for=serviceMonth] {
   -webkit-transition: 0.5s all;
   transition: 0.5s all;
 }
-.services details[open] > summary {
+
+.services details[open]>summary {
   -webkit-transition: 0.5s all;
   transition: 0.5s all;
 }
-.services details[open] > summary::before {
+
+.services details[open]>summary::before {
   -webkit-transform: rotate(90deg);
-          transform: rotate(90deg);
+  transform: rotate(90deg);
   top: 4px;
   left: -4px;
 }
+
 .services_link {
   color: blue;
   text-align: right;
@@ -623,6 +691,7 @@ label[for=serviceDay], label[for=serviceMonth] {
   text-decoration: underline;
   padding-right: 25px;
 }
+
 .services_line {
   margin: 10px auto;
   width: 80%;
@@ -630,9 +699,11 @@ label[for=serviceDay], label[for=serviceMonth] {
   background-color: #B8860B;
   border-radius: 50%;
 }
+
 .services_list {
   margin-bottom: 0;
 }
+
 .services_list-item {
   position: relative;
   font-size: 17px;
@@ -640,6 +711,7 @@ label[for=serviceDay], label[for=serviceMonth] {
   color: #27567a;
   margin-bottom: 10px;
 }
+
 .services_list-item::before {
   display: block;
   width: 20px;
@@ -650,9 +722,11 @@ label[for=serviceDay], label[for=serviceMonth] {
   position: absolute;
   background: url("../img/icons/circle-check.svg") center center/cover no-repeat;
 }
+
 .services_list-item:last-child {
   margin-bottom: 0;
 }
+
 .services_list-item a {
   color: #a03636;
   text-decoration: underline;
@@ -661,6 +735,7 @@ label[for=serviceDay], label[for=serviceMonth] {
 .cars-gallery {
   padding-bottom: 35px;
 }
+
 .cars-gallery_title {
   text-align: center;
   font-size: 36px;
@@ -671,16 +746,18 @@ label[for=serviceDay], label[for=serviceMonth] {
   margin-bottom: 40px;
   margin-top: 40px;
 }
+
 .cars-gallery_warning {
   text-align: center;
   font-size: 17px;
   position: relative;
   border-radius: 5px;
   -webkit-box-shadow: 0 0 4px 2px rgba(204, 51, 0, 0.5);
-          box-shadow: 0 0 4px 2px rgba(204, 51, 0, 0.5);
+  box-shadow: 0 0 4px 2px rgba(204, 51, 0, 0.5);
   padding: 10px 45px;
   margin-bottom: 40px;
 }
+
 .cars-gallery_warning::before {
   content: "";
   background: url("../img/icons/warning.svg") center center/cover no-repeat;
@@ -690,23 +767,25 @@ label[for=serviceDay], label[for=serviceMonth] {
   position: absolute;
   top: 50%;
   -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
   left: 20px;
 }
+
 .cars-gallery ul.nav li {
   margin: 0;
   cursor: pointer;
 }
+
 .cars-gallery ul.nav li.nav-item {
   -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  -ms-flex: 1;
+  flex: 1;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   padding: 10px;
   font-size: 16px;
   font-weight: 600;
@@ -714,19 +793,24 @@ label[for=serviceDay], label[for=serviceMonth] {
   border-bottom: 1px solid transparent;
   border-top-right-radius: 10px;
 }
+
 .cars-gallery ul.nav li.nav-item:hover {
   background-color: rgba(128, 128, 128, 0.438);
 }
+
 .cars-gallery ul.nav li.nav-item.active {
   background-color: #000;
   color: #fff;
 }
+
 .cars-gallery ul.nav li.nav-item.active a.nav-link {
   color: black;
 }
+
 .cars-gallery .nav-tabs a.nav-link {
   border: none;
 }
+
 .cars-gallery_car-name {
   display: none;
   position: relative;
@@ -740,21 +824,25 @@ label[for=serviceDay], label[for=serviceMonth] {
   margin-bottom: 10px;
   cursor: pointer;
 }
+
 .cars-gallery_car-name i.fa-plus {
   display: inline-block;
   position: absolute;
   right: 20px;
   top: 50%;
   -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
 }
+
 .cars-gallery_car-name i.fa-chevron-down {
   display: none;
 }
+
 .cars-gallery_car-name.active {
   background-color: #000;
   color: #fff;
 }
+
 .cars-gallery_car-name.active i.fa-chevron-down {
   color: #fff;
   display: inline-block;
@@ -762,49 +850,59 @@ label[for=serviceDay], label[for=serviceMonth] {
   right: 20px;
   top: 50%;
   -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
 }
+
 .cars-gallery_car-name.active i.fa-plus {
   display: none;
 }
+
 .cars-gallery .tab-content {
   padding: 20px;
 }
+
 .cars-gallery_photo {
   border-radius: 5%;
   -webkit-transition: 1s all;
   transition: 1s all;
   cursor: pointer;
 }
+
 .cars-gallery_photo.scaled {
   -webkit-transform: scale(130%);
-          transform: scale(130%);
+  transform: scale(130%);
 }
+
 .cars-gallery_photo.scaled:first-child {
   -webkit-transform-origin: left center;
-          transform-origin: left center;
+  transform-origin: left center;
 }
+
 .cars-gallery_photo.scaled:last-child {
   -webkit-transform-origin: right center;
-          transform-origin: right center;
+  transform-origin: right center;
 }
 
 .footer {
   padding: 20px 0;
   background-color: #000;
 }
+
 .footer_wrapper {
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
+
 .footer a {
   -webkit-transition: 0.6s all;
   transition: 0.6s all;
 }
+
 .footer_social {
   gap: 20px;
 }
+
 .footer_social i {
   color: #fff;
   font-size: 35px;
@@ -812,36 +910,44 @@ label[for=serviceDay], label[for=serviceMonth] {
   -webkit-transition: 0.6s all;
   transition: 0.6s all;
 }
+
 .footer_social i:hover {
   color: #B8860B;
   -webkit-transform: scale(150%);
-          transform: scale(150%);
+  transform: scale(150%);
 }
+
 .footer_text {
   color: #fff;
   text-align: center;
 }
+
 .footer_address {
   text-align: center;
 }
+
 .footer_address i.i-location {
   color: #fff;
   font-size: 15px;
   cursor: pointer;
   display: inline;
 }
+
 .footer_links {
   -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
   gap: 20px;
 }
+
 .footer_links a {
   font-weight: 600;
 }
+
 .footer_links .link_active {
   color: #B8860B;
 }
+
 .footer_links .link_active:hover {
   color: #fff;
 }
@@ -849,16 +955,20 @@ label[for=serviceDay], label[for=serviceMonth] {
 .fast-track {
   padding-bottom: 40px;
 }
+
 .fast-track .services_title {
   margin-top: 0;
   background-color: rgba(68, 68, 68, 0.8);
 }
+
 .fast-track .services_item {
   background-color: rgba(255, 255, 255, 0.9);
 }
+
 .fast-track .services_list {
   margin-bottom: 5px;
 }
+
 .fast-track_subtitle {
   font-size: 22px;
   text-indent: 25px;
@@ -867,15 +977,18 @@ label[for=serviceDay], label[for=serviceMonth] {
   margin-bottom: 10px;
   color: #008080;
 }
+
 .fast-track_list {
   margin-bottom: 0;
 }
+
 .fast-track_item {
   position: relative;
   font-size: 18px;
   text-indent: 0;
   margin-bottom: 10px;
 }
+
 .fast-track_item::before {
   display: block;
   width: 20px;
@@ -886,9 +999,11 @@ label[for=serviceDay], label[for=serviceMonth] {
   position: absolute;
   background: url("../img/icons/tick.svg") center center/cover no-repeat;
 }
+
 .fast-track_item:last-child {
   margin-bottom: 0;
 }
+
 .fast-track_empty {
   opacity: 0;
 }
@@ -906,15 +1021,18 @@ label[for=serviceDay], label[for=serviceMonth] {
   margin-bottom: 0;
   background-color: rgba(68, 68, 68, 0.9);
 }
+
 .terms_list {
   margin: 20px auto;
 }
+
 .terms_item {
   position: relative;
   font-size: 18px;
   text-indent: 0;
   margin-bottom: 10px;
 }
+
 .terms_item::before {
   display: block;
   width: 20px;
@@ -929,49 +1047,57 @@ label[for=serviceDay], label[for=serviceMonth] {
 .about {
   padding: 30px 0;
 }
+
 .about_wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   gap: 50px;
 }
+
 .about_leader {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   gap: 10px;
   max-width: 500px;
 }
+
 .about_photo {
   max-width: 100%;
 }
+
 .about_name {
   font-size: 24px;
   font-weight: 800;
   text-align: center;
 }
+
 .about_name br {
   display: none;
 }
+
 .about_position {
   font-size: 20px;
   font-weight: 600;
   text-align: center;
   text-transform: uppercase;
 }
+
 .about_description {
   padding-top: 50px;
 }
+
 .about_text {
   font-size: 18px;
   text-indent: 25px;
@@ -982,428 +1108,566 @@ label[for=serviceDay], label[for=serviceMonth] {
   .fast-track_item {
     font-size: 16px;
   }
+
   .about_name {
     font-size: 20px;
   }
+
   .about_position {
     font-size: 18px;
   }
 }
+
 @media (max-width: 1199px) {
   .header_logo {
     max-width: 100%;
   }
+
   .header .navpanel a {
     font-size: 17px;
   }
+
   .main .booking .top-content {
     padding-bottom: 75px;
   }
+
   .main_content {
     padding-top: 75px;
   }
+
   .main_slider {
     height: 380px;
     width: 570px;
   }
+
   .main .rsvn-form {
     height: 380px;
   }
-  .main .rsvn-form #pickUpWarning, .main .rsvn-form #dropOffWarning {
+
+  .main .rsvn-form #pickUpWarning,
+  .main .rsvn-form #dropOffWarning {
     top: 48px;
   }
+
   .main .cars-list {
     width: 100%;
   }
+
   .main .cars-list .car-data {
     -webkit-box-flex: 1.2;
-        -ms-flex: 1.2;
-            flex: 1.2;
+    -ms-flex: 1.2;
+    flex: 1.2;
   }
+
   .main .request-form {
     width: 100%;
   }
-  .main .request-form .request-text, .main .request-form .request-select {
+
+  .main .request-form .request-text,
+  .main .request-form .request-select {
     font-size: 18px;
   }
+
   .main .request-form .service-date {
     gap: 5px;
   }
+
   .fast-track .services_subtitle {
     font-size: 21px;
   }
+
   .cars-gallery ul.nav li.nav-item {
     font-size: 14px;
   }
-  .footer_text, .footer_address a {
+
+  .footer_text,
+  .footer_address a {
     font-size: 14px;
   }
 }
+
 @media (max-width: 991px) {
   a:hover {
     color: #fff;
   }
+
   .header .navpanel_menu {
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     margin-top: 30px;
     gap: 30px;
   }
-  .header .navpanel_menu_contacts a:hover, .header .navpanel_menu_menu a:hover {
+
+  .header .navpanel_menu_contacts a:hover,
+  .header .navpanel_menu_menu a:hover {
     color: #fff;
   }
+
   .main_title {
     font-size: 36px;
   }
-  .main .request-text, .main .request-select {
+
+  .main .request-text,
+  .main .request-select {
     font-size: 16px;
   }
-  .main #serviceDay, .main #serviceMonth, .main #serviceYear, .main #serviceTime {
+
+  .main #serviceDay,
+  .main #serviceMonth,
+  .main #serviceYear,
+  .main #serviceTime {
     font-size: 13px;
     height: 49px;
   }
+
   .main .srv-tab:not(.srv-tab-active):hover {
     background-color: rgb(179, 179, 179);
     color: #000;
     font-weight: normal;
   }
-  .main #search:hover, .main #requestBtn:hover, .main .selectBtn:hover {
+
+  .main #search:hover,
+  .main #requestBtn:hover,
+  .main .selectBtn:hover {
     background-color: #444;
     color: #ffffff;
   }
+
   .services_text {
     font-size: 14px;
   }
+
   .services_list-item {
     font-size: 13px;
   }
+
   .services_item {
     margin-bottom: 40px;
   }
+
   .fast-track {
     padding-bottom: 0;
   }
+
   .fast-track_item {
     font-size: 18px;
   }
+
   .fast-track_empty {
     display: none;
   }
+
   .cars-gallery_warning {
     padding-right: 55px;
     padding-left: 55px;
   }
+
   .cars-gallery ul.nav {
     display: none;
   }
+
   .cars-gallery_car-name {
     display: block;
   }
+
   .footer_links a {
     font-size: 11px;
   }
+
   .footer_social i:hover {
     color: #fff;
     -webkit-transform: none;
-            transform: none;
+    transform: none;
   }
+
   .about_leader {
     max-width: 48%;
   }
 }
+
 @media (max-width: 767px) {
   .header .navpanel {
     padding-top: 15px;
     padding-bottom: 15px;
   }
+
   .header .navpanel_logo {
     -webkit-box-ordinal-group: 1;
-        -ms-flex-order: 0;
-            order: 0;
+    -ms-flex-order: 0;
+    order: 0;
     margin-bottom: 15px;
   }
+
   .header .navpanel_contacts {
     text-align: center;
   }
+
   .header .navpanel_menu {
     margin-top: 15px;
   }
+
   .header .navpanel_menu a {
     font-size: 20px;
   }
+
   .header_logo {
     max-width: 300px;
     margin: 0 auto;
   }
+
   .main .booking .top-content {
     padding-bottom: 50px;
   }
+
   .main_title {
     font-size: 25px;
   }
+
   .main_content {
     padding-top: 50px;
   }
+
   .main .request-form {
     margin-bottom: 0;
   }
+
   .main_slider {
     height: 345px;
   }
+
   .main .cars-list .car {
     -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    flex-wrap: wrap;
     border-bottom: 2px solid #000;
   }
-  .main .cars-list .car .car-data, .main .cars-list .car .car-icon, .main .cars-list .car .car-price, .main .cars-list .car a {
+
+  .main .cars-list .car .car-data,
+  .main .cars-list .car .car-icon,
+  .main .cars-list .car .car-price,
+  .main .cars-list .car a {
     min-width: 47%;
   }
-  .main .cars-list .car .car-data, .main .cars-list .car a {
+
+  .main .cars-list .car .car-data,
+  .main .cars-list .car a {
     text-align: center;
   }
+
   .main .request-form {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 5, 1fr;
   }
+
   .main .request-form .request-title {
     grid-column: 1/3;
   }
-  .main .request-form #comments, .main .request-form #requestBtn {
+
+  .main .request-form #comments,
+  .main .request-form #requestBtn {
     grid-column: 2/3;
   }
+
   .main .request-form .request-form-contact {
     grid-row: 3/5;
   }
+
   .main .request-form #comments {
     grid-row: 3/4;
     margin-top: 13px;
     height: 165px;
   }
+
   .main .request-form #requestBtn {
     grid-row: 4/5;
   }
-  .main .request-form #serviceDay, .main .request-form #serviceMonth, .main .request-form #serviceYear, .main .request-form #serviceTime {
+
+  .main .request-form #serviceDay,
+  .main .request-form #serviceMonth,
+  .main .request-form #serviceYear,
+  .main .request-form #serviceTime {
     font-size: 16px;
   }
+
   .services {
     padding-bottom: 15px;
   }
+
   .services_text {
     font-size: 18px;
   }
+
   .services_list-item {
     font-size: 16px;
   }
+
   .services_item {
     margin-bottom: 25px;
   }
+
   .services_title {
     margin-top: 15px;
     margin-bottom: 15px;
   }
+
   .terms_title {
     font-size: 25px;
   }
+
   .cars-gallery_title {
     margin-top: 15px;
     margin-bottom: 25px;
   }
+
   .cars-gallery_warning {
     margin-bottom: 25px;
   }
+
   .cars-gallery_photo:first-child {
     margin-bottom: 20px;
   }
-  .footer_social, .footer_links {
+
+  .footer_social,
+  .footer_links {
     -webkit-box-ordinal-group: 2;
-        -ms-flex-order: 1;
-            order: 1;
+    -ms-flex-order: 1;
+    order: 1;
     margin-bottom: 10px;
   }
-  .footer_address, .footer_text {
+
+  .footer_address,
+  .footer_text {
     -webkit-box-ordinal-group: 3;
-        -ms-flex-order: 2;
-            order: 2;
+    -ms-flex-order: 2;
+    order: 2;
     margin-bottom: 10px;
   }
+
   .footer_social {
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     gap: 30px;
   }
+
   .footer_social i {
     font-size: 25px;
   }
+
   .footer_links {
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
   }
+
   .footer_links a {
     font-size: 18px;
   }
+
   .about_name br {
     display: inline;
   }
 }
+
 @media (max-width: 575px) {
-  .header_contacts, .header_menu {
+
+  .header_contacts,
+  .header_menu {
     display: block;
     padding: 5px 0 5px 10px;
   }
+
   .header_logo {
     max-width: 100%;
     border-radius: 5px;
     -webkit-box-shadow: 0 -2px 5px 6px rgba(210, 210, 210, 0.3);
-            box-shadow: 0 -2px 5px 6px rgba(210, 210, 210, 0.3);
+    box-shadow: 0 -2px 5px 6px rgba(210, 210, 210, 0.3);
   }
+
   .header .navpanel {
     padding-top: 20px;
     padding-bottom: 20px;
   }
+
   .header .navpanel_logo {
     width: 75%;
     margin: 0 auto 10px;
     padding: 0;
   }
+
   .header .navpanel_contacts {
     display: none;
   }
+
   .header .navpanel_contacts.opened {
     display: block;
     margin-bottom: 10px;
   }
+
   .header .navpanel_menu {
     display: none;
   }
+
   .header .navpanel_menu.opened {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     gap: 7px;
   }
+
   .header .navpanel_menu a {
     font-size: 18px;
   }
+
   .main_slider {
     height: 210px;
   }
+
   .main_slider #slider-prev {
     left: 7px;
   }
+
   .main_slider #slider-next {
     right: 7px;
   }
+
   .main_slider.p-2 {
     padding: 3px !important;
   }
-  .main .slider-title-name, .main .slider-title-price {
+
+  .main .slider-title-name,
+  .main .slider-title-price {
     font-size: 12px;
   }
+
   .main .car {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     padding: 5px 5px 10px;
     gap: 5px;
   }
+
   .main .car a[href="#serviceDay"] {
     min-width: 100%;
   }
+
   .main .car a[href="#serviceDay"] button.selectBtn {
     width: 100%;
   }
+
   .main .car-name {
     font-size: 17px;
     margin-bottom: 0;
   }
+
   .main .request-form {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
   }
+
   .main .request-form #comments {
     margin-top: 0;
     margin-bottom: 20px;
     height: 150px;
   }
+
   .services_title {
     font-size: 32px;
   }
+
   .services_text {
     font-size: 17px;
     text-align: left;
   }
+
   .services_list-item {
     font-size: 15px;
   }
+
   .services .fast-track_item {
     font-size: 16px;
   }
+
   .fast-track .services_title {
     font-size: 28px;
   }
+
   .terms_title {
     font-size: 22px;
   }
+
   .terms_item {
     font-size: 15px;
   }
+
   .cars-gallery_title {
     font-size: 32px;
   }
+
   .cars-gallery_warning {
     font-size: 14px;
   }
+
   .cars-gallery_car-name {
     font-size: 16px;
   }
+
   .footer_links a {
     font-size: 15px;
   }
+
   .about {
     padding: 0 0 20px;
   }
+
   .about_wrapper {
     gap: 20px;
     -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    flex-wrap: wrap;
   }
+
   .about_leader {
     max-width: 70%;
   }
+
   .about_name {
     font-size: 17px;
   }
+
   .about_name br {
     display: none;
   }
+
   .about_position {
     font-size: 14px;
   }
+
   .about_description {
     padding-top: 25px;
   }
+
   .about_text {
     font-size: 15px;
   }
 }
+
 @media ((min-width: 470px) and (max-width: 576px)) {
   .main_slider {
     height: 320px;
   }
 }
+
 @media ((min-width: 370px) and (max-width: 469px)) {
   .main_slider {
     height: 270px;
