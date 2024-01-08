@@ -53,7 +53,7 @@ function mainFunction(Email, requestData) {
     requestBtn.addEventListener('click', function (event) {
         if (validateRequest(rsvnData, requestData)) {
             event.preventDefault();
-            alert(`Your request sent! We'll get back to you shortly.\n Our website is in test mode now. Some errors may occur regarding mails delivery. If we didn't reply within 12 hours, kindly contact us via mail or messengers.`);
+            alert(`Your request sent! We'll get back to you shortly.\nOur website is in test mode now. Some errors may occur regarding mails delivery.\nIf we didn't reply within 12 hours, kindly contact us via mail or messengers.`);
             sendEmail(rsvnData);
         } else {
             'Data hasnt passed validation!';
