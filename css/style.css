@@ -1269,10 +1269,12 @@ label[for=serviceDay], label[for=serviceMonth] {
     padding: 5px 0 5px 10px;
   }
   .header_logo {
-    max-width: 100%;
-    border-radius: 5px;
-    -webkit-box-shadow: 0 -2px 5px 6px rgba(210, 210, 210, 0.3);
-            box-shadow: 0 -2px 5px 6px rgba(210, 210, 210, 0.3);
+    width: 50px;
+    height: 50px;
+    padding: 3px;
+    border-radius: 50%;
+    -webkit-box-shadow: 0 0 5px 5px rgba(210, 210, 210, 0.3);
+            box-shadow: 0 0 5px 5px rgba(210, 210, 210, 0.3);
   }
   .header .navpanel {
     padding-top: 20px;
