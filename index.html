@@ -14,7 +14,7 @@
 		integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 	<link rel="stylesheet" href="css/fontawesome/css/all.css">
 	<link rel="stylesheet" href="css/style.css">
-	<title>PLT Limo</title>
+	<title>EV Phuket Limo Service</title>
 </head>
 
 <body>
@@ -28,22 +28,22 @@
 						<i class="fa-solid fa-chevron-down fa-contacts"></i>
 					</div>
 					<div class="navpanel_contacts navpanel_item col-lg-4 col-md-6 col-12">
-						<a href="tel:+66622426477" class="d-block">
+						<a href="tel:+66622426477" class="hidden">
 							<i class="fa-solid fa-mobile-screen"></i>
 							+66-62-242-6477 <span class="lang">English</span>
 						</a>
-						<a href="tel:+66819589887" class="d-block">
+						<a href="tel:+66819589887" class="hidden">
 							<i class="fa-solid fa-mobile-screen"></i>
 							081-958-9887 <span class="lang" lang="th">ไทย</span>
 						</a>
-						<a href="mailto:rsvn@plt.limo" class="d-block">
+						<a href="mailto:limo@exoticvoyage.com" class="d-block">
 							<i class="fa-solid fa-envelope"></i>
-							rsvn@plt.limo
+							limo@exoticvoyage.com
 						</a>
 					</div>
 
 					<a href="#" class="d-block navpanel_item navpanel_logo col-lg-4 col-md-6 col-12">
-						<img src="img/promo/logo_white_430x100.jpg" alt="logo" class="header_logo d-block">
+						<img src="img/promo/ev_logo.png" alt="logo" class="header_logo">
 					</a>
 
 					<div class="header_menu navpanel_item col-12">Menu
@@ -64,18 +64,18 @@
 	<main class="main" role="main">
 		<section class="booking">
 			<div class="top-content">
-				<h1 class="main_title">Phuket Top Quality Transportation Services</h1>
+				<h1 class="main_title">Exotic Voyage Limo Service</h1>
 				<div class="container">
 					<div class="main_content d-flex">
-						<div id="carouselExampleSlidesOnly" class="main_slider shadow p-2 bg-body rounded carousel slide"
-							data-bs-ride="carousel">
-	
+						<div id="carouselExampleSlidesOnly"
+							class="main_slider shadow p-2 bg-body rounded carousel slide" data-bs-ride="carousel">
+
 							<div class="carousel-inner">
 								<div class="carousel-item active" data-bs-interval="3000">
 									<img src="img/frontslider/VitoSlider.png" class="d-block w-100" alt="Vito">
 									<div class="slider-title d-flex rounded">
 										<div class="slider-title-name">Mercedes-Benz Vito Tourer VIP</div>
-										<div class="slider-title-price">From 3500 THB</div>
+										<div class="slider-title-price">From 4000 THB</div>
 									</div>
 								</div>
 								<div class="carousel-item" data-bs-interval="3000">
@@ -100,10 +100,10 @@
 									</div>
 								</div>
 								<div class="carousel-item" data-bs-interval="3000">
-									<img src="img/frontslider/EclassSlider.png" class="d-block w-100" alt="Eclass">
+									<img src="img/frontslider/Eclass.png" class="d-block w-100" alt="Eclass">
 									<div class="slider-title d-flex rounded">
 										<div class="slider-title-name">Mercedes-Benz E-class</div>
-										<div class="slider-title-price">From 3000 THB</div>
+										<div class="slider-title-price">From 4000 THB</div>
 									</div>
 								</div>
 								<div class="carousel-item" data-bs-interval="3000">
@@ -121,14 +121,14 @@
 								<i class="fa-solid fa-circle-chevron-right"></i>
 							</div>
 						</div>
-	
+
 						<div class="rsvn-form shadow p-2 bg-body rounded">
 							<div class="rsvn-srv-choice">
 								<div class="srv-tab trf-tab srv-tab-active">One way</div>
 								<div class="srv-tab hourly-tab">Hourly</div>
 							</div>
 							<div form="main-form" class="form-info form-active">
-	
+
 								<div class="pickup">
 									<label for="pickup" class="forms-text">From</label>
 									<div class="row-location">
@@ -136,12 +136,14 @@
 										<select id="pickup" name="pickup" title="pickup"
 											class="rsvn-form_select form-select" required>
 											<option value="empty"></option>
-											<option value="airport" data-name="airport" data-area="inside">Phuket Airport
+											<option value="airport" data-name="airport" data-area="inside">Phuket
+												Airport
 											</option>
 											<option value="phuket" data-name="phuket" data-area="inside">Phuket other
 												location
 											</option>
-											<option value="natai" data-name="natai" data-area="outside">Natai beach</option>
+											<option value="natai" data-name="natai" data-area="outside">Natai beach
+											</option>
 											<option value="khaolak" data-name="khaoLak" data-area="outside">Khao Lak
 											</option>
 											<option value="krabi" data-name="krabi" data-area="outside">Krabi (only land
@@ -151,7 +153,7 @@
 										<div id="pickUpWarning" class="hidden">Please select location</div>
 									</div>
 								</div>
-	
+
 								<div class="dropoff">
 									<label for="dropoff" class="forms-text">To</label>
 									<div class="row-location">
@@ -159,12 +161,14 @@
 										<select id="dropoff" name="dropoff" title="dropoff"
 											class="rsvn-form_select form-select">
 											<option value="empty"></option>
-											<option value="airport" data-name="airport" data-area="inside">Phuket Airport
+											<option value="airport" data-name="airport" data-area="inside">Phuket
+												Airport
 											</option>
 											<option value="phuket" data-name="phuket" data-area="inside">Phuket other
 												location
 											</option>
-											<option value="natai" data-name="natai" data-area="outside">Natai beach</option>
+											<option value="natai" data-name="natai" data-area="outside">Natai beach
+											</option>
 											<option value="khaolak" data-name="khaoLak" data-area="outside">Khao Lak
 											</option>
 											<option value="krabi" data-name="krabi" data-area="outside">Krabi (only land
@@ -174,7 +178,7 @@
 										<div id="dropOffWarning" class="hidden">Please select location</div>
 									</div>
 								</div>
-	
+
 								<div class="duration hidden">
 									<label for="duration" class="forms-text">Duration</label>
 									<div class="row-location">
@@ -223,9 +227,10 @@
 						<a href="#serviceDay"><button class="selectBtn" data-carname="Sprinter"
 								data-maxcap="9">Select</button></a>
 					</div>
-	
+
 					<div class="car d-flex" data-carname="Sprinter+LgCar">
-						<img src="img/carsmenu/SprinterLgSlider.png" alt="Sprinter with luggage" class="car-icon d-block">
+						<img src="img/carsmenu/SprinterLgSlider.png" alt="Sprinter with luggage"
+							class="car-icon d-block">
 						<div class="car-data">
 							<h6 class="car-name">Mercedes-Benz Sprinter 319 VIP with Luggage car</h6>
 							<div class="car-capacity">
@@ -239,7 +244,7 @@
 						<a href="#serviceDay"><button class="selectBtn" data-carname="Sprinter+LgCar"
 								data-maxcap="9">Select</button></a>
 					</div>
-	
+
 					<div class="car d-flex" data-carname="Alphard">
 						<img src="img/carsmenu/AlphardSlider.png" alt="Alphard" class="car-icon d-block">
 						<div class="car-data">
@@ -261,7 +266,7 @@
 						<a href="#serviceDay"><button class="selectBtn" data-carname="Alphard"
 								data-maxcap="5">Select</button></a>
 					</div>
-	
+
 					<div class="car d-flex" data-carname="Alphard+LgCar">
 						<img src="img/carsmenu/AlphardLgSlider.png" alt="Alphard with luggage" class="car-icon d-block">
 						<div class="car-data">
@@ -277,7 +282,7 @@
 						<a href="#serviceDay"><button class="selectBtn" data-carname="Alphard+LgCar"
 								data-maxcap="5">Select</button></a>
 					</div>
-	
+
 					<div class="car d-flex" data-carname="Sclass">
 						<img src="img/carsmenu/SclassSlider.png" alt="S-class" class="car-icon d-block">
 						<div class="car-data">
@@ -293,7 +298,7 @@
 						<a href="#serviceDay"><button class="selectBtn" data-carname="Sclass"
 								data-maxcap="3">Select</button></a>
 					</div>
-	
+
 					<div class="car d-flex" data-carname="Vito">
 						<img src="img/carsmenu/VitoSlider.png" alt="Vito" class="car-icon d-block">
 						<div class="car-data">
@@ -309,7 +314,7 @@
 						<a href="#serviceDay"><button class="selectBtn" data-carname="Vito"
 								data-maxcap="5">Select</button></a>
 					</div>
-	
+
 					<div class="car d-flex" data-carname="Eclass">
 						<img src="img/carsmenu/EclassSlider.png" alt="E-class" class="car-icon d-block">
 						<div class="car-data">
@@ -325,7 +330,7 @@
 						<a href="#serviceDay"><button class="selectBtn" data-carname="Eclass"
 								data-maxcap="3">Select</button></a>
 					</div>
-	
+
 					<div class="car d-flex" data-carname="Ventury">
 						<img src="img/carsmenu/VenturySlider.png" alt="Ventury" class="car-icon d-block">
 						<div class="car-data">
@@ -342,11 +347,11 @@
 								data-maxcap="5">Select</button></a>
 					</div>
 				</div>
-	
+
 				<div class="booking_form hidden">
 					<form method="POST" id="main-form" class="request-form  form-active shadow p-2 bg-body rounded">
 						<div class="request-title request-text">BOOKING DETAILS</div>
-	
+
 						<div class="request-form-date">
 							<p class="request-text">Service date & time</p>
 							<div class="service-date d-flex">
@@ -417,7 +422,7 @@
 								</div>
 							</div>
 						</div>
-	
+
 						<div class="request-form-trip">
 							<p class="request-text">trip details</p>
 							<input type="number" name="numberOfGuests" id="guestsQnt" placeholder="Passengers"
@@ -429,17 +434,17 @@
 							<input type="text" name="dropOffPlace" id="dropOffPlace" class="request-text form-control"
 								placeholder="Dropoff hotel/location name">
 						</div>
-	
+
 						<div class="request-form-contact">
 							<p class="request-text">contact details</p>
 							<input type="text" id="pickUpSign" class="request-text d-block form-control"
 								placeholder="Pick up sign" required>
-							<input type="email" name="guestEmail" id="guestEmail" class="d-block request-text form-control"
-								placeholder="Email" required>
+							<input type="email" name="guestEmail" id="guestEmail"
+								class="d-block request-text form-control" placeholder="Email" required>
 							<input type="tel" name="guestTel" id="guestTel" class="d-block request-text form-control"
 								placeholder="Telephone: +" required>
 						</div>
-	
+
 						<textarea name="comments" id="comments" cols="70" rows="10" class="form-control"
 							placeholder="Comments: airport fast track service, child seat & others"></textarea>
 						<button id="requestBtn" type="submit" class="d-block">Send request</button>

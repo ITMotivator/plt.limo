@@ -55,10 +55,14 @@ address {
   background-color: #000;
 }
 .header_logo {
-  border-radius: 15px;
-  max-width: 370px;
-  -webkit-box-shadow: 0 0 23px 16px rgba(210, 210, 210, 0.3);
-          box-shadow: 0 0 23px 16px rgba(210, 210, 210, 0.3);
+  border-radius: 50%;
+  padding: 10px;
+  width: 125px;
+  height: 125px;
+  -webkit-box-shadow: 0 0 16px 16px rgba(210, 210, 210, 0.3);
+          box-shadow: 0 0 16px 16px rgba(210, 210, 210, 0.3);
+  -ms-flex-item-align: center;
+      align-self: center;
 }
 .header_contacts, .header_menu {
   position: relative;
@@ -114,11 +118,22 @@ address {
       -ms-flex-order: 1;
           order: 1;
 }
+.header .navpanel_logo {
+  text-align: center;
+}
 .header .navpanel_contacts a, .header .navpanel_menu a {
   font-size: 19px;
   font-weight: 600;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
+}
+.header .navpanel_contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .header .navpanel_menu {
   display: -webkit-box;
